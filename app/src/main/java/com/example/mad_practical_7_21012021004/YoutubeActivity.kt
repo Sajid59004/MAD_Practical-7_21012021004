@@ -8,6 +8,7 @@ import android.webkit.WebView
 import com.google.android.material.floatingactionbutton.FloatingActionButton
 
 class YoutubeActivity : AppCompatActivity() {
+    private val youtubeID = "fJn9B64Znnrk"
 
     private fun initYoutubePlayer() {
         val webView = findViewById<WebView>(R.id.myweb1)
@@ -17,7 +18,7 @@ class YoutubeActivity : AppCompatActivity() {
         webSettings.useWideViewPort = true
 
         // Replace this with the standard YouTube URL
-        val youtubeUrl = "https://www.youtube.com/watch?v=L5Qz0_45vOI"
+        val youtubeUrl = "https://www.youtube.com/embed/$youtubeId"
 
         // Load the YouTube URL into the WebView
         webView.loadUrl(youtubeUrl)
